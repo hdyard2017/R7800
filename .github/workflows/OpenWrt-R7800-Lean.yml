@@ -42,19 +42,19 @@ env:
   # 分支
   BRANCH: R7800-Lean
   # Github 用户名
-  GITHUB_USER_NAME: ClayMoreBoy
+  GITHUB_USER_NAME: hdyard2017
   # Github 邮箱
   GITHUB_USER_EMAIL: ${{ secrets.EMAIL }}
   # Github
-  GITHUB: github.com/OpenWrt-Actions/R7800.git
+  GITHUB: github.com/hdyard2017/R7800.git
   # 上传固件
   UPLOAD_FIRMWARE: true
   # 上传到奶牛快传
-  UPLOAD_COWTRANSFER: true
+  UPLOAD_COWTRANSFER: false
   # 创建+上传发布
   CREATE_RELEASE: true
   # 编译者
-  BUILD_USER: ClayMoreBoy
+  BUILD_USER: hdyard
   # 微信通知
   SEND_WECHAT_MSG: false
 
@@ -130,7 +130,7 @@ jobs:
 
     # SSH连接
     # - name: SSH connection to Actions
-    #  uses: P3TERX/debugger-action@master
+    #  uses: P3TERX/Actions-OpenWrt@master
     #  if: env.SSH_ACTIONS == 'true'
 
     # 下载软件包
